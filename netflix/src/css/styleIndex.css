@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    animation: fadeInAnimation ease 1.5s;
+  }
+  
+  body {
+    background-color: black;
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+
+  a{
+    color: white;
+    text-decoration:none;
+  }
+  
+  .navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5%;
+    z-index: 10;
+  }
+  
+  .navbar__brand {
+    width: 100px;
+    height: 100%;
+  }
+  
+  .brand__logo {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .language__drop__down {
+    background: transparent;
+    border: none;
+    color: white;
+  }
+  
+  .language__drop__down:focus {
+    outline: none;
+  }
+  
+  .language__drop__down option {
+    background-color: black;
+  }
+  
+  .dropdown__container {
+    border: 1px solid white;
+    color: white;
+    padding: 0.4rem;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  .signin__button {
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .navbar__nav__items {
+    display: flex;
+    gap: 10px;
+  }
+
+  .hero__bg__image__container {
+    width: 100%;
+    height: 80vh;
+  }
+  
+  .hero__bg__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.75;
+  }
+  
+  .hero__bg__overlay {
+    position: absolute;
+    inset: 0;
+    width: auto;
+    height: auto;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to top,
+        rgba(0, 0, 0, 0.8) 0,
+        rgba(0, 0, 0, 0) 60%,
+        rgba(0, 0, 0, 0.8) 100%);
+  }
+  
+  .hero__card {
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .hero__title {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  
+  .hero__subtitle,
+  .hero__description {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  
+  .hero__description {
+    margin: 0 50px;
+  }
+  
+  .email__input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    padding-left: 7px;
+  }
+  
+  .email__label {
+    color: black;
+    position: absolute;
+    top: 28%;
+    left: 2%;
+    color: rgb(153, 149, 149);
+    transition: 0.5s;
+  }
+  
+  .email__form__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .form__container {
+    background-color: white;
+    width: 90%;
+    height: 50px;
+    position: relative;
+  }
+  
+  .email__input:focus+.email__label {
+    top: 0.2rem;
+    font-size: 10px;
+  }
+  
+  .email__input:not(:placeholder-shown).email__input:not(:focus)+.email__label {
+    top: 0.2rem;
+    font-size: 10px;
+  }
+  
+  .email__input:focus-visible {
+    outline: none;
+  }
+  
+  .primary__button {
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border-radius: 2px;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+
+/* Tab Content */
+.tab-content {
+  border-top: 8px solid #333;
+  padding: 3rem 0;
+  background: #000;
+  color: #fff;
+}
+
+/* Hide initial content */
+#tab-1-content {
+  display: none;
+  opacity: 0;
+}
+
+#tab-1-content img{
+  width: 80%;
+  height: 80%;
+  border-radius: 20%;
+}
+
+.show {
+  display: block !important;
+  opacity: 1 !important;
+  transition: all 1000 ease-in;
+}
+
+.tab-1-content-inner a {
+  margin-left: 100px;
+}
+
+#tab-1-content .tab-1-content-inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Text Styles */
+.text-xl {
+  font-size: 2rem;
+}
+
+.text-lg {
+  font-size: 1.6rem;
+  margin-left: 30px;
+  margin-bottom: 1rem;
+}
+
+.text-md {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-dark {
+  color: #999;
+}
+  
+footer {
+    border-top: 8px solid #333;
+    padding: 2rem 1rem;
+    color: #757575;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .footer__row__2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 200px;
+  }
+
+  .footer__row__2 a{
+    text-decoration: none;
+    color: #757575;
+  }
+  
+  .footer__row__1&gt; 
+  h4 {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  .footer__row__3&gt;
+  .dropdown__container {
+    width: fit-content;
+    border: 1px solid #757575;
+    color: #757575;
+  }
+  
+  .footer__row__3&gt;.dropdown__container&gt;
+  .language__drop__down {
+    color: #757575;
+  }
+  
+  @media (min-width: 768px) {
+    .hero__bg__image__container {
+      height: 100vh;
+    }
+  
+    .hero__bg__overlay {
+      height: 100vh;
+    }
+  
+    .hero__card {
+      top: 40%;
+      left: 30%;
+      transform: translate(-20%, -20%);
+    }
+  
+    .hero__title {
+      font-size: 3rem;
+    }
+  
+    .hero__subtitle,
+    .hero__description {
+      font-size: 1.3rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .navbar {
+      padding: 2% 5%;
+    }
+  
+    .navbar__brand {
+      width: 150px;
+    }
+  
+    .signin__button {
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+  
+    .dropdown__container {
+      padding: 10px 5px;
+    }
+  
+    .navbar__nav__items {
+      gap: 30px;
+    }
+  
+    .hero__card {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .form__container {
+      width: 50%;
+    }
+  
+    .email__form__container {
+      flex-direction: row;
+      align-items: center;
+      gap: 1px;
+    }
+  
+    .primary__button {
+      height: 50px;
+    }
+  
+    footer {
+      padding: 2rem 20rem;
+      justify-content: flex-start;
+      text-align: left;
+      align-items: flex-start;
+    }
+  
+    .footer__row__2 {
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+    }
+  
+    .footer__row__1,
+    .footer__row__3,
+    .footer__row__4 {
+      align-self: flex-start;
+    }
+  }
+  
+  @media (min-width: 1254px) {}
+
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0.3;
+    }
+    75% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
